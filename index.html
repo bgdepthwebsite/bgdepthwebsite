@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice Generation</title>
+    <link rel="stylesheet" href="styles.css">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6393306358775343"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="nav_container">
+        <div class="navbar">
+            <a href="#home">Home</a>
+            <a href="#profile1">Profile 1</a>
+            <a href="#profile2">Profile 2</a>
+            <a href="#profile3">Profile 3</a>
+        </div>
+    </div>
+    <div class="container">
+        <h1>Invoice Generation</h1>
+        <div class="form-container">
+            <br>
+            <h2>Enter Borewell Details</h2>
+            <br>
+            <form id="invoiceForm">
+                <div>
+                    <label for="borewellDepth">Borewell Depth (in meters):</label>
+                    <input type="number" id="borewellDepth" name="borewellDepth" required>
+                </div>
+                <div>
+                    <label for="casingPipeChoice">Choose casing pipe (MS/UPVC):</label>
+                    <select id="casingPipeChoice" name="casingPipeChoice" required>
+                        <option value="">Select</option>
+                        <option value="MS">MS</option>
+                        <option value="UPVC">UPVC</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="casingpipe">Quantity for casing pipe:</label>
+                    <input type="number" id="casingpipe" name="casingpipe" required>
+                </div>
+
+            </form>
+        </div>
+        <table id="invoiceTable" class="invoice-table">
+            <thead>
+                <tr>
+                    <th>SL No</th>
+                    <th>Description</th>
+                    <th>Segment Depth (Mtrs)</th>
+                    <th>Rate</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <button type="submit">Generate Invoice</button>
+        <button type="button" id="clearButton">Clear</button>
+    </div>
+    <!-- Left Ad -->
+    <div class="left-ad">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6393306358775343"
+        crossorigin="anonymous"></script>
+   <!-- vertical -->
+   <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-client="ca-pub-6393306358775343"
+        data-ad-slot="4686760326"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+   <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+   </script>
+    </div>
+    <!-- Right Ad -->
+    <div class="right-ad">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6393306358775343"
+        crossorigin="anonymous"></script>
+   <!-- vertical -->
+   <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-client="ca-pub-6393306358775343"
+        data-ad-slot="4686760326"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+   <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+   </script>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
