@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile 1</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="nav_container">
+        <div class="navbar">
+            <a href="./index.html">Home</a>
+            <a href="./profile1.html">Profile 1</a>
+            <a href="#profile2">Profile 2</a>
+            <a href="#profile3">Profile 3</a>
+        </div>
+    </div> 
+    <div class="container">
+        <h1>Profile 1</h1>
+        <form>
+            <label for="depthCells">Enter number of depth cells:</label>
+            <input type="number" id="depthCells" name="depthCells" required>
+            <button type="button" id="generateDepthCellsButton">Generate Depth Cells</button>
+        </form>
+        <div id="depthCellsContainer"></div>
+
+<form>
+    <table>
+        <tr>
+            <td><label for="casingPipeQuantity">Quantity for casing pipe:</label></td>
+            <td><input type="number" id="casingPipeQuantity" name="casingPipeQuantity" required></td>
+            <td><label for="casingPipeRate">Rate for casing pipe:</label></td>
+            <td><input type="number" id="casingPipeRate" name="casingPipeRate" required></td>
+        </tr>
+        <tr>
+            <td><label for="capsQuantity">Quantity for caps:</label></td>
+            <td><input type="number" id="capsQuantity" name="capsQuantity" required></td>
+            <td><label for="capsRate">Rate for caps:</label></td>
+            <td><input type="number" id="capsRate" name="capsRate" required></td>
+        </tr>
+        <tr>
+            <td><label for="gst">GST (%):</label></td>
+            <td><input type="number" id="gst" name="gst" required></td>
+            <td><label for="sgst">SGST (%):</label></td>
+            <td><input type="number" id="sgst" name="sgst" required></td>
+        </tr>
+        <tr>
+            <td colspan="4" style="text-align: center;">
+                <button type="button" id="generateInvoiceButton">Generate Invoice</button>
+            </td>
+        </tr>
+    </table>
+</form>
+
+        
+        <table id="invoiceTable"></table>
+    </div>
+    <script src="profile1.js"></script>
+</body>
+</html>
