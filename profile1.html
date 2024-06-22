@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile1</title>
+    <link rel="stylesheet" href="profile1.css" />
+  </head>
+  <body>
+    <div class="nav_container">
+      <div class="navbar">
+        <a href="./index.html">Home</a>
+        <a href="./profile1.html">Custom</a>
+      </div>
+    </div>
+    <div class="container">
+      <h1>Invoice Generation</h1>
+      <form>
+        <div>
+          <label for="depthCells">Number of Depth Cells (max 10):</label>
+          <br />
+          <input
+            type="text"
+            id="depthCells"
+            name="depthCells"
+            min="1"
+            max="10"
+            required
+          />
+        </div>
+        <button type="button" id="generateDepthCellsButton">
+          Generate Depth Cells
+        </button>
+
+        <div id="depthCellsContainer"></div>
+
+        <table>
+          <tr>
+            <td>
+              <label for="casingPipeQuantity">Quantity for casing pipe:</label>
+            </td>
+            <td>
+              <input
+                type="text"
+                id="casingPipeQuantity"
+                name="casingPipeQuantity"
+                required
+              />
+            </td>
+            <td><label for="casingPipeRate">Rate for casing pipe:</label></td>
+            <td>
+              <input
+                type="text"
+                id="casingPipeRate"
+                name="casingPipeRate"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="capsQuantity">Quantity for caps:</label></td>
+            <td>
+              <input
+                type="text"
+                id="capsQuantity"
+                name="capsQuantity"
+                required
+              />
+            </td>
+            <td><label for="capsRate">Rate for caps:</label></td>
+            <td>
+              <input type="text" id="capsRate" name="capsRate" required />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="gst">GST (%):</label></td>
+            <td><input type="text" id="gst" name="gst" required /></td>
+            <td><label for="sgst">SGST (%):</label></td>
+            <td><input type="text" id="sgst" name="sgst" required /></td>
+          </tr>
+          <tr>
+            <td colspan="4" style="text-align: center">
+              <button type="button" id="generateInvoiceButton">
+                Generate Invoice
+              </button>
+              <button type="button" id="clearButton">Clear</button>
+            </td>
+          </tr>
+        </table>
+      </form>
+
+      <table id="invoiceTable" style="display: none"></table>
+    </div>
+    <script src="profile1.js"></script>
+  </body>
+</html>
